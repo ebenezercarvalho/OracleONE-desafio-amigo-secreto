@@ -6,7 +6,7 @@ Repositório criado para controle das versões do aplicativo Amigo Secreto, dese
   
 # Amigo Secreto
 
-Este projeto é uma aplicação web que permite aos usuários inserir nomes de amigos em uma lista e realizar um sorteio aleatório para determinar quem será o "amigo secreto". A aplicação é simples e intuitiva, permitindo uma experiência divertida para grupos de amigos.
+Este projeto é uma aplicação web que permite aos usuários inserir nomes de amigos em uma lista e realizar um sorteio aleatório para determinar quem será o "amigo secreto". 
 
 ## Funcionalidades
 
@@ -20,7 +20,7 @@ Este projeto é uma aplicação web que permite aos usuários inserir nomes de a
 
 ## Estrutura do Código
 
-O código é estruturado em JavaScript e HTML, com as seguintes partes principais:
+O código é estruturado em JavaScript, HTML e CSS, com as seguintes partes principais:
 
 ### Variáveis
 
@@ -29,8 +29,8 @@ O código é estruturado em JavaScript e HTML, com as seguintes partes principai
 ### Funções
 
 1. **Adicionar Nome**:
-   - Obtém o texto inserido pelo usuário usando `document.getElementById` ou `document.querySelector`.
-   - Valida a entrada para garantir que não esteja vazia. Se estiver, exibe um alerta: "Por favor, insira um nome."
+   - Obtém o texto inserido pelo usuário usando `document.getElementById`.
+   - Valida a entrada para garantir que não esteja vazia. Se estiver, exibe um alerta: "Por favor, insira um nome válido."
    - Se válido, adiciona o nome ao array `amigos` utilizando o método `.push()`.
    - Limpa o campo de entrada após adicionar o nome.
 
@@ -64,6 +64,3 @@ O código é estruturado em JavaScript e HTML, com as seguintes partes principai
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-## Licença
-
-Este projeto está licenciado sob a MIT License.
