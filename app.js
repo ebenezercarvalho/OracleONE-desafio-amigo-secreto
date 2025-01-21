@@ -5,7 +5,7 @@ let listaDeAmigos = [];
 function adicionarAmigo() {
     //obtém o valor do input
     let inputAmigo = document.getElementById('amigo'); //'amigo' é o id lá no HTML
-    let = nomeAmigo = inputAmigo.value.trim(); //o trim remove espaços antes e depois do nome
+    let nomeAmigo = inputAmigo.value.trim(); //o trim remove espaços antes e depois do nome
 
     //verifica se o campo de texto não está vazio
     if (nomeAmigo === '') {
