@@ -1,76 +1,75 @@
-// Inicializa um array vazio para armazenar os nomes inseridos
+//array para armazenar os nomes dos amigos
 let listaDeAmigos = [];
 
-// Função para adicionar um nome à lista
+//função que adiciona o nome de um amigo na lista
 function adicionarAmigo() {
-    // Obtém o valor do campo de texto
-    let inputAmigo = document.getElementById('amigo');
-    let nomeAmigo = inputAmigo.value.trim(); // Remove espaços em branco extras
+    //obtém o valor do input
+    let inputAmigo = document.getElementById('amigo'); //'amigo' é o id lá no HTML
+    let = nomeAmigo = inputAmigo.value.trim(); //o trim remove espaços antes e depois do nome
 
-    // Valida se o campo de texto não está vazio
+    //verifica se o campo de texto não está vazio
     if (nomeAmigo === '') {
-        alert('Por favor, insira um nome válido.');
-        return; // Sai da função se o nome for inválido
+        alert('Por favor, insira um nome válido');
+        return; //sai da função e interrompe o código caso o campo esteja vazio
     }
 
-    // Adiciona o nome à lista de amigos
+    //adiciona o nome de um amigo à lista
     listaDeAmigos.push(nomeAmigo);
 
-    // Atualiza a lista visível na tela
+    //atualiza a lista de amigos na tela
     atualizarLista();
 
-    // Limpa o campo de texto para nova entrada
+    //limpa o campo de texto para uma nova entrada
     inputAmigo.value = '';
-    inputAmigo.focus(); // Foca no campo de texto novamente
+    inputAmigo.focus(); //insere o cursor no campo de texto novamente
 }
 
-// Função para atualizar a lista exibida na página
+//função que atualiza a lista de amigos
 function atualizarLista() {
-    // Obtém o elemento da lista HTML
+    //primeiro temos que pegar o elemento lista de amigos lá no HTML 
     let listaHTML = document.getElementById('listaAmigos');
 
-    // Limpa a lista atual para evitar duplicação
+    //temos que limpar a lista atual par anão duplicar
     listaHTML.innerHTML = '';
 
-    // Adiciona cada nome do array como um item de lista
+    //adiciona cada amigo na lista
     listaDeAmigos.forEach((amigo) => {
-        let item = document.createElement('li'); // Cria um elemento <li>
-        item.textContent = amigo; // Define o texto do item como o nome do amigo
-        listaHTML.appendChild(item); // Adiciona o item à lista
+        let item = document.createElement('li'); //cria o elemento <li> lá no HTML para representar cada nome da lista
+        item.textContent = amigo; //agora, cada item da lista é o nome de um amigo
+        listaHTML.appendChild(item); //adiciona esse item na lista
     });
 }
 
-// Função para realizar o sorteio de um amigo
+//função que realiza o sorteio 
 function sortearAmigo() {
-    // Verifica se a lista está vazia
+    //verifica se a lista está vazia
     if (listaDeAmigos.length === 0) {
-        alert('Por favor, insira um nome.');
-        return; // Sai da função se não houver amigos
+        alert('Por favor, adicione ao menos um amigo para realizar o sorteio');
+        return; //sai da função e interrompe o código caso a lista esteja vazia
     }
 
-    // Gera um índice aleatório baseado no tamanho da lista
-    let indiceAleatorio = Math.floor(Math.random() * listaDeAmigos.length);
+    //cria um índice aleatório com base no tamanho da lista
+    let indiceAleatorio = Math.floor(Math.random() * listaDeAmigos.length); //o math.random seleciona um valor aleatório entre 0 e .999, multiplica esse valor pelo número de itens da lista e retorna um valor inteiro que vai ser sempre menor ou igual ao número máximo de itens na lista. É assim que o nome aleatório é selecionado.
 
-    // Obtém o nome correspondente ao índice sorteado
+    //obtém o nome correspondente ao índice sorteado
     let amigoSorteado = listaDeAmigos[indiceAleatorio];
 
-    // Exibe o resultado na página
+    //exibe o resultado na tela
     exibirResultado(amigoSorteado);
 }
 
-// Função para exibir o resultado do sorteio
+//função que exibe o resultado do sorteio
 function exibirResultado(amigo) {
-    // Obtém o elemento onde o resultado será exibido
+    //obtém o elemento onde o resultado deve ser exibido
     let resultadoHTML = document.getElementById('resultado');
 
-    // Limpa qualquer resultado anterior
+    //limpa o resultado anterior
     resultadoHTML.innerHTML = '';
 
-    // Cria um novo item para exibir o nome sorteado
+    //cria um novo item para mostrar o reultado do sorteio
     let itemResultado = document.createElement('li');
     itemResultado.textContent = `O amigo sorteado é: ${amigo}`;
 
-    // Adiciona o item ao elemento de resultado
+    //mostra o resultado na tela
     resultadoHTML.appendChild(itemResultado);
 }
-//O principal objetivo deste desafio é fortalecer suas habilidades em lógica de programação. Aqui você deverá desenvolver a lógica para resolver o problema.
