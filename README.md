@@ -2,6 +2,7 @@
 ## Desafio: Amigo secreto
 Repositório criado para controle das versões do aplicativo Amigo Secreto, desenvolvido como parte da formação em Lógica de Programação da ALURA no programa OracleONE.
 O app permite aos usuários inserir nomes de amigos em uma lista e realizar um sorteio aleatório para determinar quem será o "amigo secreto". 
+Para testar o funcionamento, acesse: https://ebenezercarvalho.github.io/OracleONE-desafio-amigo-secreto/
 
 ![image](https://github.com/user-attachments/assets/41b957b7-0155-4ec7-a18a-ffede4a334ff)
 
