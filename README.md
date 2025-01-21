@@ -1,12 +1,10 @@
 # OracleONE 
 ## Desafio: Amigo secreto
-Repositório criado para controle das versões do aplicativo Amigo Secreto, desenvolvido como parte da formação em Lógica de Programação.
+Repositório criado para controle das versões do aplicativo Amigo Secreto, desenvolvido como parte da formação em Lógica de Programação da ALURA no programa OracleONE.
+O app permite aos usuários inserir nomes de amigos em uma lista e realizar um sorteio aleatório para determinar quem será o "amigo secreto". 
 
-- Incluir capturas de tela
-  
-# Amigo Secreto
+![image](https://github.com/user-attachments/assets/41b957b7-0155-4ec7-a18a-ffede4a334ff)
 
-Este projeto é uma aplicação web que permite aos usuários inserir nomes de amigos em uma lista e realizar um sorteio aleatório para determinar quem será o "amigo secreto". 
 
 ## Funcionalidades
 
@@ -47,11 +45,6 @@ O código é estruturado em JavaScript, HTML e CSS, com as seguintes partes prin
    - Acessa o nome correspondente no array usando o índice aleatório.
    - Atualiza o conteúdo do elemento de resultado usando `document.getElementById()` e `innerHTML` para exibir o amigo sorteado.
 
-## Tecnologias Utilizadas
-
-- HTML
-- CSS
-- JavaScript
 
 ## Como Executar
 
@@ -61,6 +54,4 @@ O código é estruturado em JavaScript, HTML e CSS, com as seguintes partes prin
 4. Clique em "Sortear Amigo" para ver quem será seu amigo secreto!
 
 ## Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
-
+O design em HTML e os estilos CSS foram fornecidos pela ALURA.
